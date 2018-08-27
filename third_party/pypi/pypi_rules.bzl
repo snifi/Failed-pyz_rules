@@ -22,8 +22,8 @@ pyz_library(
 def pypi_libraries():
     pyz_library(
         name="markupsafe",
-        deps=[
-        ] + [":pypi_markupsafe"],
+        deps=[],
+        wheels=[":pypi_markupsafe"],
         licenses=["notice"],
         visibility=["//visibility:public"],
     )
